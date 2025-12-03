@@ -6,38 +6,52 @@
     <title>Responsive Tailwind Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-lightgray-600 min-h-screen">
-    <header class="flex justify-between">
-        
-        <div class="flex gap-4">
-            <div>
-                <img>img here</img>
-            </div>
-            <div>
-                <p>It's me</p>
-            </div>
+<body class="bg-gray-100 min-h-screen">
+
+      <!-- controller for sidebar -->
+    <input id="menu-toggle" type="checkbox" class="peer hidden" />
+
+      <!-- HEADER -->
+    <header class="flex items-center justify-between px-4 py-4 bg-white">
+        <div class="flex items-center gap-3">
+            <img src="img-here" alt="Avatar"
+           class="w-9 h-9 rounded-full object-cover">
+            <p class="text-sm font-semibold">It's me</p>
         </div>
-        <div class="flex">
-            <btn class="border-2 border-solid border-pink-300 rounded-md">Download CV</btn>
-            <label for="#"></label>
-            <input type="checkbox"><input>
-                <ul class="gap-4 display-none">
-                    <li>home</li>
-                    <li>about</li>
-                    <li>contact</li>
-                 </ul>
-            </nav>
+
+        <div class="flex items-center gap-3">
+            <button
+                class="hidden sm:inline-block border border-pink-300 rounded-full px-4 py-1 text-xs font-medium">
+                Download CV
+            </button>
+
+            <label for="menu-toggle"
+                    class="sm:hidden p-2 rounded-md border border-gray-200 cursor-pointer">
+                <span class="block w-5 h-0.5 bg-gray-800 mb-1"></span>
+                <span class="block w-5 h-0.5 bg-gray-800 mb-1"></span>
+                <span class="block w-5 h-0.5 bg-gray-800"></span>
+            </label>
         </div>
     </header>
-
+    
     <main>
         <section class="start-learn">
+            <p class="p-2 text-3xl">
+                Let's learn to code an application
+            </p>
+
+            <p class="p-2 text-md">
+                with me arif iskandar, a software developer who loves to share how to code in many programing languages and multi platforms.
+            </p>
 
         </section>
 
         <section class="load-more">
 
         </section>
+
+        <!-- end of sections by Vojta -->
+        <!-- start of sections by Isabella -->
 
         <section class="its-me">
 
