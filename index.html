@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Tailwind Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100 min-h-screen">
 
-      <!-- controller for sidebar -->
+    <!-- controller for sidebar -->
     <input id="menu-toggle" type="checkbox" class="peer hidden" />
 
-      <!-- HEADER -->
+    <!-- HEADER -->
     <header class="flex items-center justify-between px-4 py-4 bg-white">
         <div class="flex items-center gap-3">
-            <img src="images/header/me 3.png" alt="profile photo"
-           class="w-9 h-9 rounded-full object-cover">
+            <img src="images/header/me 3.png" alt="profile photo" class="w-9 h-9 rounded-full object-cover">
             <p class="text-sm font-semibold">It's me</p>
         </div>
 
         <div class="flex items-center gap-3">
-            <button
-                class="hidden sm:inline-block border border-pink-300 rounded-full px-4 py-1 text-xs font-medium">
+            <button class="hidden sm:inline-block border border-pink-300 rounded-full px-4 py-1 text-xs font-medium">
                 Download CV
             </button>
 
-            <label for="menu-toggle"
-                    class="sm:hidden p-2 rounded-md border border-gray-200 cursor-pointer">
+            <label for="menu-toggle" class="sm:hidden p-2 rounded-md border border-gray-200 cursor-pointer">
                 <span class="block w-5 h-0.5 bg-gray-800 mb-1"></span>
                 <span class="block w-5 h-0.5 bg-gray-800 mb-1"></span>
                 <span class="block w-5 h-0.5 bg-gray-800"></span>
             </label>
         </div>
     </header>
-    
+
     <main>
         <section class="start-learn">
             <p class="p-2 text-6xl ">
@@ -41,13 +40,13 @@
             </p>
 
             <p class="p-2 text-xl">
-                with me arif iskandar, a software developer who loves to share how to code in many programing languages and multi platforms.
+                with me arif iskandar, a software developer who loves to share how to code in many programing languages
+                and multi platforms.
             </p>
 
             <div class="flex justify-start gap-4 text md p-2">
-                <button
-                class="bg-pink-400 text-white rounded-full px-4 py-1 font-medium">
-                Download CV
+                <button class="bg-pink-400 text-white rounded-full px-4 py-1 font-medium">
+                    Download CV
                 </button>
                 <i><img src="images/icons/vector1.png" alt="github"></i>
                 <i><img src="images/icons/vector2a.png" alt="instagram"></i>
@@ -58,25 +57,32 @@
         </section>
 
         <section class="load-more">
-            <div class="flex-col justify-center m-2 p-2 rounded-md">
+            <div class="flex-col justify-center m-2 p-4 rounded-md">
 
-                <div class="border-2 border-dashed border-gray flex-col"> 
-                    <img src="images/load-more/image 1.png" alt="image 1" class="rounded-md w-full m-5 justify-center">
-                    <div class="flex-row">    
-                        <div class="flex-col justify-between">
-                            <p class="p-2 text-lg">Bwalet</p>
-                            <p class="p-2 lext-md">Bussiness wallet</p>
+                <div class="absolute top-3 right-3 flex gap-2">
+                    <img src="images/load-more/tool1.png" class="w-6 h-6 rounded-md shadow-md">
+                    <img src="images/load-more/tool2.png" class="w-6 h-6 rounded-md shadow-md">
+                </div>
+
+                <div class="border-2 border-dashed border-gray flex-col p-4">
+                    <img src="images/load-more/image 1.png" alt="image 1" class="p-4 h-48 width-full object-cover rounded-xl">
+                    <div class="mt-3 flex justify-between items-center">
+                        <div>
+                            <p class="font-semibold text-lg text-gray-800">BWalet</p>
+                            <p class="text-gray-500 text-sm -mt-1">Business wallet</p>
                         </div>
-                        <p class="text-md">99</p>
+
+                        <div class="bg-gray-500 text-white text-xs px-3 py-3 rounded-full">
+                            +99
+                        </div>
                     </div>
                 </div>
-                
+
                 <p>Bookies</p>
                 <p>Gojek</p>
 
-                <button
-                class="bg-pink-400 text-white rounded-full px-4 py-1 font-medium">
-                Load More
+                <button class="bg-pink-400 text-white rounded-full px-4 py-1 font-medium">
+                    Load More
                 </button>
             </div>
 
@@ -94,6 +100,7 @@
         </section>
 
     </main>
-    
+
 </body>
+
 </html>
