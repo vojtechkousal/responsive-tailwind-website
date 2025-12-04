@@ -5,82 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Tailwind Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --font-title: "Poppins", sans-serif;
+            --font-main: "Inter", sans-serif;
+            --subtitle-color: #EF5DA8;
+            --text-color: #393F48;
+        }
+
+    </style>
 </head>
-<body class="bg-gray-100 min-h-screen">
-
-      <!-- controller for sidebar -->
-    <input id="menu-toggle" type="checkbox" class="peer hidden" />
-
-      <!-- HEADER -->
-    <header class="flex items-center justify-between px-4 py-4 bg-white">
-        <div class="flex items-center gap-3">
-            <img src="img-here" alt="Avatar"
-           class="w-9 h-9 rounded-full object-cover">
-            <p class="text-sm font-semibold">It's me</p>
-        </div>
-
-        <div class="flex items-center gap-3">
-            <button
-                class="hidden sm:inline-block border border-pink-300 rounded-full px-4 py-1 text-xs font-medium">
-                Download CV
-            </button>
-
-            <label for="menu-toggle"
-                    class="sm:hidden p-2 rounded-md border border-gray-200 cursor-pointer">
-                <span class="block w-5 h-0.5 bg-gray-800 mb-1"></span>
-                <span class="block w-5 h-0.5 bg-gray-800 mb-1"></span>
-                <span class="block w-5 h-0.5 bg-gray-800"></span>
-            </label>
-        </div>
-    </header>
-    
+<body class="bg-white ">
     <main>
-        <section class="start-learn">
-            <p class="p-2 text-6xl ">
-                Let's learn to code an application
+        <div
+            class="pointer-events-none absolute -right-[-0.2rem] top-[-8.75rem] w-[260px] h-[520px]
+           bg-[url('./images/bg-sphere.png')] bg-no-repeat bg-contain">
+        </div>
+        <section class="px-6 py-16">
+            <!-- Title + Photo -->
+            <div class="text-left relative">
+            
+                <!-- Title -->
+                <h2 class=" [font-family:var(--font-title)] [font-color:var(--text-color)] text-[33.6px] font-light leading-tight mb-[2rem]">
+                    It’s me <br />
+                    Arif Iskandar
+                </h2>
+
+                <!-- Photo in circular radial container -->
+                <div class="absolute right-[-1rem] top-0 translate-y-[-20%]">
+                    <div class="">
+                        <img src="./images/arif-img.png" alt="Arif Iskandar"/>
+                    </div>
+                </div>
+             </div>
+
+            <!-- Description -->
+            <p class="[font-family:var(--font-main)] [font-color:var(--text-color)] text-[1rem] font-normal mt-6 pe-8 leading-relaxed">
+                I like to code and keep it simple, try something new, and learn more.
+                I think sharing knowledge is the best practice to improve my skills, and I try to do it.
             </p>
 
-            <p class="p-2 text-xl">
-                with me arif iskandar, a software developer who loves to share how to code in many programing languages and multi platforms.
+            <p class="[font-family:var(--font-main)] [font-color:var(--text-color)] text-[1rem] font-normal mt-6 pe-8 leading-relaxed">
+                I am currently the Chief Technology Officer at dSociety,
+                a startup to help students prepare for their exams.
             </p>
+        </section>
 
-            <div class="flex justify-evenly text md p-2">
-                <button
-                class="bg-pink-400 text-white rounded-full px-4 py-1 font-medium">
-                Download CV
-                </button>
-                <i>git</i>
-                <i>ins</i>
-                <i>tik</i>
-                <i>ytb</i>
+        <!-- TESTIMONIAL CARD 1 -->
+        <section class="px-6 mb-8">
+        <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+            <!-- Header -->
+            <div class="flex items-center gap-4 mb-4">
+            <img
+                src="./images/adison-img-1.png"
+                alt="Adison Westervelt"
+                class="w-12 h-12 rounded-full object-cover"
+            />
+            <div>
+                <p class="font-semibold text-gray-800">Adison Westervelt</p>
+                <p class="text-sm text-pink-400">Senior Program Manager at…</p>
+            </div>
             </div>
 
+            <!-- Text -->
+            <p class="text-gray-600 leading-relaxed text-sm">
+            Hendrerit diam a, morbi tristique egestas commodo ullamcorper ut. 
+            Aenean ipsum tempus, felis nibh amet mollis id sem sit. Venenatis aliquam tellus viverra nullam. 
+            Consequat cras ac donec nunc.
+            </p>
+        </div>
         </section>
 
-        <section class="load-more">
-            <div class="flex-col justify-center gap-8">
-
-                <p>Bwalet</p>
-                <p>Bookies</p>
-                <p>Gojek</p>
-
-                <button
-                class="bg-pink-400 text-white rounded-full px-4 py-1 font-medium">
-                Load More
-                </button>
+        <!-- TESTIMONIAL CARD 2 -->
+        <section class="px-6 mb-12">
+        <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+            <!-- Header -->
+            <div class="flex items-center gap-4 mb-4">
+            <img
+                src="./images/adison-img-2.png"
+                alt="Adison Westervelt"
+                class="w-12 h-12 rounded-full object-cover"
+            />
+            <div>
+                <p class="font-semibold text-gray-800">Adison Westervelt</p>
+                <p class="text-sm text-pink-400">Senior Program Manager at…</p>
+            </div>
             </div>
 
+            <!-- Text -->
+            <p class="text-gray-600 leading-relaxed text-sm">
+            Orci penatibus luctus felis in aliquam adipiscing. 
+            Vulputate condimentum ullamcorper pellentesque dictumst fusce.
+            </p>
+        </div>
         </section>
 
-        <!-- end of sections by Vojta -->
-        <!-- start of sections by Isabella -->
+        <!-- CALL TO ACTION -->
+        <section class="text-center px-6 pb-20">
+        <h3 class="text-xl font-medium text-gray-800 mb-6">
+            So, what are you <br> waiting for?
+        </h3>
 
-        <section class="its-me">
-
-        </section>
-
-        <section class="lets-start">
-
+        <button class="bg-pink-400 hover:bg-pink-500 text-white px-8 py-3 rounded-full font-medium shadow-lg transition">
+            Let’s start
+        </button>
         </section>
 
     </main>
