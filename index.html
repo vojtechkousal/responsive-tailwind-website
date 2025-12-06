@@ -6,21 +6,26 @@
     <title>Responsive Tailwind Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+    <!-- Variables -->
     <style>
         :root {
             --font-title: "Poppins", sans-serif;
             --font-main: "Inter", sans-serif;
-            --subtitle-color: #EF5DA8;
+            --brand-color: #EF5DA8;
             --text-color: #393F48;
         }
 
     </style>
 </head>
-<body class="bg-white ">
+<body class="bg-white overflow-x-hidden">
     <main>
         <div
-            class="pointer-events-none absolute -right-[-0.2rem] top-[-8.75rem] w-[260px] h-[520px]
-           bg-[url('./images/bg-sphere.png')] bg-no-repeat bg-contain">
+            class="pointer-events-none absolute right-[-14rem] top-[-12rem] w-[30rem] h-[35rem] bg-[url('./images/bg-sphere.png')] bg-no-repeat bg-contain z-[-1] overflow-x-hidden">
         </div>
         <section class="px-6 py-16">
             <!-- Title + Photo -->
@@ -33,7 +38,7 @@
                 </h2>
 
                 <!-- Photo in circular radial container -->
-                <div class="absolute right-[-1rem] top-0 translate-y-[-20%]">
+                <div class="absolute right-[-0.75rem] top-[0.25rem] translate-y-[-20%] w-[4.25rem] h-[4.25rem]">
                     <div class="">
                         <img src="./images/arif-img.png" alt="Arif Iskandar"/>
                     </div>
@@ -41,7 +46,7 @@
              </div>
 
             <!-- Description -->
-            <p class="[font-family:var(--font-main)] [font-color:var(--text-color)] text-[1rem] font-normal mt-6 pe-8 leading-relaxed">
+            <p class="[font-family:var(--font-main)] [font-color:var(--text-color)] text-[1rem] font-normal mt-6 pe-8 leading-relaxed z-10">
                 I like to code and keep it simple, try something new, and learn more.
                 I think sharing knowledge is the best practice to improve my skills, and I try to do it.
             </p>
@@ -52,62 +57,146 @@
             </p>
         </section>
 
-        <!-- TESTIMONIAL CARD 1 -->
-        <section class="px-6 mb-8">
-        <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
-            <!-- Header -->
-            <div class="flex items-center gap-4 mb-4">
-            <img
-                src="./images/adison-img-1.png"
-                alt="Adison Westervelt"
-                class="w-12 h-12 rounded-full object-cover"
-            />
-            <div>
-                <p class="font-semibold text-gray-800">Adison Westervelt</p>
-                <p class="text-sm text-pink-400">Senior Program Manager at…</p>
-            </div>
-            </div>
-
-            <!-- Text -->
-            <p class="text-gray-600 leading-relaxed text-sm">
-            Hendrerit diam a, morbi tristique egestas commodo ullamcorper ut. 
-            Aenean ipsum tempus, felis nibh amet mollis id sem sit. Venenatis aliquam tellus viverra nullam. 
-            Consequat cras ac donec nunc.
-            </p>
+        <!-- TRANSPARENCY GRID -->
+        <div class="absolute right-0 top-[50rem] z-100">
+            <img src="./images/transparency.png" alt="transparency grid"/>
         </div>
-        </section>
 
-        <!-- TESTIMONIAL CARD 2 -->
-        <section class="px-6 mb-12">
-        <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
-            <!-- Header -->
-            <div class="flex items-center gap-4 mb-4">
-            <img
-                src="./images/adison-img-2.png"
-                alt="Adison Westervelt"
-                class="w-12 h-12 rounded-full object-cover"
-            />
-            <div>
-                <p class="font-semibold text-gray-800">Adison Westervelt</p>
-                <p class="text-sm text-pink-400">Senior Program Manager at…</p>
-            </div>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- TESTIMONIAL CARD 1 -->
+            <section class="col-start-1 row-start-1 md:col-start-1 md:row-start-1 lg:col-start-2 lg:row-start-1 px-6 mb-8">
+                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <!-- Header -->
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="./images/adison-img-1.png" alt="Adison Westervelt" class="w-12 h-12 rounded-full object-cover"/>
+                        <div>
+                            <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[16px] font-light">Adison Westervelt</p>
+                            <p class="[font-family:var(--font-title)] [color:var(--brand-color)] text-[14px] font-light">Senior Proogram Manager at Microsoft</p>
+                        </div>
+                    </div>
 
-            <!-- Text -->
-            <p class="text-gray-600 leading-relaxed text-sm">
-            Orci penatibus luctus felis in aliquam adipiscing. 
-            Vulputate condimentum ullamcorper pellentesque dictumst fusce.
-            </p>
+                    <!-- Text -->
+                    <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[14px] leading-relaxed font-light">
+                    Hendrerit diam a, morbi tristique egestas commodo ullamcorper ut. 
+                    Aenean ipsum tempus, felis nibh amet mollis id sem sit. Venenatis aliquam tellus viverra nullam. 
+                    Consequat cras ac donec nunc.
+                    </p>
+                </div>
+            </section>
+
+            <!-- TESTIMONIAL CARD 2 -->
+            <section class="col-start-1 row-start-2 md:col-start-1 md:row-start-2 lg:col-start-2 lg:row-start-2 px-6 mb-12">
+                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <!-- Header -->
+                    <div class="flex items-center gap-4 mb-4">
+                        <img
+                            src="./images/adison-img-2.png"
+                            alt="Adison Westervelt"
+                            class="w-12 h-12 rounded-full object-cover"
+                        />
+                        <div>
+                            <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[16px] font-light">Adison Westervelt</p>
+                            <p class="[font-family:var(--font-title)] [color:var(--brand-color)] text-[14px] font-light">Senior Proogram Manager at Microsoft</p>
+                        </div>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="[font-family:var(--font-title)] [color:var(--text-color)] text-[14px] leading-relaxed font-light">
+                        <p> penatibus luctus felis in aliquam adipiscing. 
+                            Vulputate condimentum ullamcorper pellentesque dictumst fusce.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TESTIMONIAL CARD 3 -->
+            <section class="md:col-start-2 md:row-start-1 lg:col-start-3 lg:row-start-1 hidden md:block px-6 mb-8">
+                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <!-- Header -->
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="./images/marley-img-1.png" alt="Marley Siphron" class="w-12 h-12 rounded-full object-cover"/>
+                        <div>
+                            <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[16px] font-light">Marley Siphron</p>
+                            <p class="[font-family:var(--font-title)] [color:var(--brand-color)] text-[14px] font-light">Jobs</p>
+                        </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[14px] leading-relaxed font-light">
+                    Habitant ut augue eu accumsan tellus ultrices integer. Gravida elementum egestas tellus condimentum bibendum suspendisse ut. Blandit.
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- TESTIMONIAL CARD 4 -->
+            <section class="md:col-start-2 md:row-start-2 lg:col-start-3 lg:row-start-2 hidden md:block px-6 mb-8">
+                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <!-- Header -->
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="./images/marley-img-2.png" alt="Marley Siphron" class="w-12 h-12 rounded-full object-cover"/>
+                        <div>
+                            <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[16px] font-light">Marley Siphron</p>
+                            <p class="[font-family:var(--font-title)] [color:var(--brand-color)] text-[14px] font-light">Jobs</p>
+                        </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[14px] leading-relaxed font-light">
+                    Vitae purus ipsum eget leo at sed facilisi nisl. Ornare suspendisse netus in nunc eget facilisis accumsan gravida nisl.
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- TESTIMONIAL CARD 5 -->
+            <section class="lg:col-start-1 lg:row-start-1 hidden lg:block px-6 mb-8">
+                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <!-- Header -->
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="./images/marilyn-img-1.png" alt="Marilyn Siphron" class="w-12 h-12 rounded-full object-cover"/>
+                        <div>
+                            <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[16px] font-light">Marilyn Siphron</p>
+                            <p class="[font-family:var(--font-title)] [color:var(--brand-color)] text-[14px] font-light">Remix and React Training</p>
+                        </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[14px] leading-relaxed font-light">
+                    Tellus mauris adipiscing dignissim sodales. Id dui venenatis mollis faucibus.
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- TESTIMONIAL CARD 6 -->
+            <section class="lg:col-start-1 lg:row-start-2 hidden lg:block px-6 mb-8">
+                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <!-- Header -->
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="./images/marilyn-img-2.png" alt="Marilyn Siphron" class="w-12 h-12 rounded-full object-cover"/>
+                        <div>
+                            <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[16px] font-light">Marilyn Siphron</p>
+                            <p class="[font-family:var(--font-title)] [color:var(--brand-color)] text-[14px] font-light">Remix and React Training</p>
+                        </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[14px] leading-relaxed font-light">
+                    Libero in egestas pellentesque purus, nullam. Consectetur commodo odio interdum neque ullamcorper sit.
+                    </p>
+                </div>
+            </section>
+
         </div>
-        </section>
 
         <!-- CALL TO ACTION -->
         <section class="text-center px-6 pb-20">
         <h3 class="text-xl font-medium text-gray-800 mb-6">
-            So, what are you <br> waiting for?
+            So, what are you waiting for?
         </h3>
 
-        <button class="bg-pink-400 hover:bg-pink-500 text-white px-8 py-3 rounded-full font-medium shadow-lg transition">
+        <button class="bg-[var(--brand-color)] [font-family:var(--font-title)] text-white text-[14px] leading-relaxed font-light hover:bg-pink-500 px-8 py-3 rounded-full shadow-lg transition">
             Let’s start
         </button>
         </section>
