@@ -24,37 +24,62 @@
 </head>
 <body class="bg-white overflow-x-hidden">
     <main>
-        <div
-            class="pointer-events-none absolute right-[-14rem] top-[-12rem] w-[30rem] h-[35rem] bg-[url('./images/bg-sphere.png')] bg-no-repeat bg-contain z-[-1] overflow-x-hidden">
-        </div>
+        
         <section class="px-6 py-16">
-            <!-- Title + Photo -->
-            <div class="text-left relative">
-            
-                <!-- Title -->
-                <h2 class=" [font-family:var(--font-title)] [font-color:var(--text-color)] text-[33.6px] font-light leading-tight mb-[2rem]">
-                    It’s me <br />
-                    Arif Iskandar
-                </h2>
+            <div class="relative
+                lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start">
 
-                <!-- Photo in circular radial container -->
-                <div class="absolute right-[-0.75rem] top-[0.25rem] translate-y-[-20%] w-[4.25rem] h-[4.25rem]">
-                    <div class="">
-                        <img src="./images/arif-img.png" alt="Arif Iskandar"/>
+                <!-- Title + Photo -->
+                <div class="text-left relative">
+
+                    <!-- Bg sphere -->
+                    <div
+                        class="pointer-events-none absolute
+                            right-[-6rem] top-[-10rem] w-[18rem] h-[18rem]
+                            bg-[url('./images/bg-sphere.png')] bg-no-repeat bg-contain
+                            z-[-1]
+                            md:right-[-8rem] md:top-[-12rem] md:w-[24rem] md:h-[24rem]
+                            lg:right-[-4rem] lg:top-[-14rem] lg:w-[30rem] lg:h-[30rem]"
+                    ></div>
+                
+                    <!-- Title -->
+                    <h2 class=" [font-family:var(--font-title)] [font-color:var(--text-color)] text-[33.6px] font-light leading-tight mb-[2rem]
+                                md:text-[72px] lg:text-[72px]">
+                        It’s me <br />
+                        Arif Iskandar
+                    </h2>
+
+                    <!-- Photo in circular radial container -->
+                    <div
+                        class="absolute
+                            right-[0.5rem] top-[1rem] w-[4rem] h-[4rem]
+                            md:left-[16rem] md:top-[1rem]"
+                        >
+                        <img
+                            src="./images/arif-img.png"
+                            alt="Arif Iskandar"
+                            class="w-full h-full rounded-full object-cover"
+                        />
                     </div>
                 </div>
-             </div>
 
-            <!-- Description -->
-            <p class="[font-family:var(--font-main)] [font-color:var(--text-color)] text-[1rem] font-normal mt-6 pe-8 leading-relaxed z-10">
-                I like to code and keep it simple, try something new, and learn more.
-                I think sharing knowledge is the best practice to improve my skills, and I try to do it.
-            </p>
+                <!-- Description -->
+                <div class="mt-8 lg:mt-0"> 
+                    <p class="[font-family:var(--font-main)] [font-color:var(--text-color)] text-[1rem] font-normal mt-6 pe-[2rem] leading-relaxed z-10
+                                md:text-[1.5rem] md:pe-[7.5rem]
+                                lg:pe-[2rem]">
+                        I like to code and keep it simple, try something new, and learn more.
+                        I think sharing knowledge is the best practice to improve my skills, and I try to do it.
+                    </p>
 
-            <p class="[font-family:var(--font-main)] [font-color:var(--text-color)] text-[1rem] font-normal mt-6 pe-8 leading-relaxed">
-                I am currently the Chief Technology Officer at dSociety,
-                a startup to help students prepare for their exams.
-            </p>
+                    <p class="[font-family:var(--font-main)] [font-color:var(--text-color)] text-[1rem] font-normal mt-6 pe-8 leading-relaxed
+                                md:text-[1.5rem] md:pe-[14rem]
+                                lg:pe-[2rem]">
+                        I am currently the Chief Technology Officer at dSociety,
+                        a startup to help students prepare for their exams.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <!-- TRANSPARENCY GRID -->
