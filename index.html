@@ -82,13 +82,11 @@
             </div>
         </section>
 
-        <!-- TRANSPARENCY GRID -->
-        <div class="absolute right-0 top-[50rem] z-100">
-            <img src="./images/transparency.png" alt="transparency grid"/>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <!-- TESTIMONIAL CARD 1 -->
+        <div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="absolute right-0 top-[16rem] md:hidden z-100 pointer-events-none">
+                <img src="./images/transparency.png" alt="transparency grid"/>
+            </div>
+            <!-- Testimonial card 1 -->
             <section class="col-start-1 row-start-1 md:col-start-1 md:row-start-1 lg:col-start-2 lg:row-start-1 px-6 mb-8">
                 <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
                     <!-- Header -->
@@ -109,8 +107,8 @@
                 </div>
             </section>
 
-            <!-- TESTIMONIAL CARD 2 -->
-            <section class="col-start-1 row-start-2 md:col-start-1 md:row-start-2 lg:col-start-2 lg:row-start-2 px-6 mb-12">
+            <!-- Testimonial card 2 -->
+            <section class="col-start-1 row-start-2 md:col-start-1 md:row-start-2 lg:col-start-2 lg:row-start-2 px-6 mb-12 relative">
                 <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
                     <!-- Header -->
                     <div class="flex items-center gap-4 mb-4">
@@ -132,9 +130,14 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- Transparency -->
+                <div class="absolute right-0 bottom-[5rem] translate-y-1/2 md:hidden z-100 pointer-events-none">
+                    <img src="./images/transparency.png" alt="transparency grid"/>
+                </div>
             </section>
 
-            <!-- TESTIMONIAL CARD 3 -->
+            <!-- Testimonial card 3 -->
             <section class="md:col-start-2 md:row-start-1 lg:col-start-3 lg:row-start-1 hidden md:block px-6 mb-8">
                 <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
                     <!-- Header -->
@@ -154,7 +157,7 @@
             </section>
 
 
-            <!-- TESTIMONIAL CARD 4 -->
+            <!-- Testimonial card 4 -->
             <section class="md:col-start-2 md:row-start-2 lg:col-start-3 lg:row-start-2 hidden md:block px-6 mb-8">
                 <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
                     <!-- Header -->
@@ -174,7 +177,7 @@
             </section>
 
 
-            <!-- TESTIMONIAL CARD 5 -->
+            <!-- Testimonial card 5 -->
             <section class="lg:col-start-1 lg:row-start-1 hidden lg:block px-6 mb-8">
                 <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
                     <!-- Header -->
@@ -194,7 +197,7 @@
             </section>
 
 
-            <!-- TESTIMONIAL CARD 6 -->
+            <!-- Testimonial card 6 -->
             <section class="lg:col-start-1 lg:row-start-2 hidden lg:block px-6 mb-8">
                 <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
                     <!-- Header -->
@@ -215,8 +218,8 @@
 
         </div>
 
-        <!-- CALL TO ACTION -->
-        <section class="text-center px-6 pb-20">
+        <!-- Call to action -->
+        <section class="absolute left-1/2 -translate-x-1/2 px-6 pb-20 z-[101] text-center">
         <h3 class="text-xl font-medium text-gray-800 mb-6">
             So, what are you waiting for?
         </h3>
