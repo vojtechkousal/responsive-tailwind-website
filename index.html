@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Tailwind Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            variants: {
-                extend: {
-                    backgroundColor: ["has"],
-                    display: ["has"],
-                    height: ["has"],
-                }
-            }
-        }
-    </script>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Variables -->
+    <style>
+        :root {
+            --font-title: "Poppins", sans-serif;
+            --font-main: "Inter", sans-serif;
+            --brand-color: #EF5DA8;
+            --text-color: #393F48;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-100 min-h-screen">
@@ -139,8 +144,7 @@
                             <span class="block">
                                 Let’s learn
 
-                                <span class="block mt-1">to code</span><img src="images/icons/Book_open_light.png"
-                                    class="inline-block w-7 h-7 lg:w-8 lg:h-8 ml-1 align-middle" />
+                                <span class="block mt-1">to code</span>
                             </span>
                             <span class="block mt-1">an application</span>
                         </h1>
@@ -350,21 +354,191 @@
                 <!-- CARD END -->
 
             </div>
-
+        </section>
+        <section class="flex justify-center m-10">
             <button class="flex justify-center mt-4 bg-pink-400 text-white rounded-full px-4 py-1 font-medium">
                 Load More
             </button>
         </section>
 
-        <!-- end of sections by Vojta -->
-        <!-- start of sections by Isabella -->
 
-        <section class="its-me">
+        <div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="absolute right-0 top-[16rem] md:hidden z-100 pointer-events-none">
+                <img src="./images/transparency.png" alt="transparency grid" />
+            </div>
+            <!-- Testimonial card 1 -->
+            <section
+                class="col-start-1 row-start-1 md:col-start-1 md:row-start-1 lg:col-start-2 lg:row-start-1 px-6 mb-8">
+                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <!-- Header -->
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="./images/adison-img-1.png" alt="Adison Westervelt"
+                            class="w-12 h-12 rounded-full object-cover" />
+                        <div>
+                            <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[16px] font-light">
+                                Adison Westervelt</p>
+                            <p
+                                class="[font-family:var(--font-title)] [color:var(--brand-color)] text-[14px] font-light">
+                                Senior Proogram Manager at Microsoft</p>
+                        </div>
+                    </div>
 
-        </section>
+                    <!-- Text -->
+                    <p
+                        class="[font-family:var(--font-title)] [color:var(--text-color)] text-[14px] leading-relaxed font-light">
+                        Hendrerit diam a, morbi tristique egestas commodo ullamcorper ut.
+                        Aenean ipsum tempus, felis nibh amet mollis id sem sit. Venenatis aliquam tellus viverra nullam.
+                        Consequat cras ac donec nunc.
+                    </p>
+                </div>
+            </section>
 
-        <section class="lets-start">
+            <!-- Testimonial card 2 -->
+            <section
+                class="col-start-1 row-start-2 md:col-start-1 md:row-start-2 lg:col-start-2 lg:row-start-2 px-6 mb-12 relative">
+                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <!-- Header -->
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="./images/adison-img-2.png" alt="Adison Westervelt"
+                            class="w-12 h-12 rounded-full object-cover" />
+                        <div>
+                            <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[16px] font-light">
+                                Adison Westervelt</p>
+                            <p
+                                class="[font-family:var(--font-title)] [color:var(--brand-color)] text-[14px] font-light">
+                                Senior Proogram Manager at Microsoft</p>
+                        </div>
+                    </div>
 
+                    <!-- Text -->
+                    <div
+                        class="[font-family:var(--font-title)] [color:var(--text-color)] text-[14px] leading-relaxed font-light">
+                        <p> penatibus luctus felis in aliquam adipiscing.
+                            Vulputate condimentum ullamcorper pellentesque dictumst fusce.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Transparency -->
+                <div class="absolute right-0 bottom-[5rem] translate-y-1/2 md:hidden z-100 pointer-events-none">
+                    <img src="./images/transparency.png" alt="transparency grid" />
+                </div>
+            </section>
+
+            <!-- Testimonial card 3 -->
+            <section class="md:col-start-2 md:row-start-1 lg:col-start-3 lg:row-start-1 hidden md:block px-6 mb-8">
+                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <!-- Header -->
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="./images/marley-img-1.png" alt="Marley Siphron"
+                            class="w-12 h-12 rounded-full object-cover" />
+                        <div>
+                            <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[16px] font-light">
+                                Marley Siphron</p>
+                            <p
+                                class="[font-family:var(--font-title)] [color:var(--brand-color)] text-[14px] font-light">
+                                Jobs</p>
+                        </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p
+                        class="[font-family:var(--font-title)] [color:var(--text-color)] text-[14px] leading-relaxed font-light">
+                        Habitant ut augue eu accumsan tellus ultrices integer. Gravida elementum egestas tellus
+                        condimentum bibendum suspendisse ut. Blandit.
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- Testimonial card 4 -->
+            <section class="md:col-start-2 md:row-start-2 lg:col-start-3 lg:row-start-2 hidden md:block px-6 mb-8">
+                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <!-- Header -->
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="./images/marley-img-2.png" alt="Marley Siphron"
+                            class="w-12 h-12 rounded-full object-cover" />
+                        <div>
+                            <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[16px] font-light">
+                                Marley Siphron</p>
+                            <p
+                                class="[font-family:var(--font-title)] [color:var(--brand-color)] text-[14px] font-light">
+                                Jobs</p>
+                        </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p
+                        class="[font-family:var(--font-title)] [color:var(--text-color)] text-[14px] leading-relaxed font-light">
+                        Vitae purus ipsum eget leo at sed facilisi nisl. Ornare suspendisse netus in nunc eget facilisis
+                        accumsan gravida nisl.
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- Testimonial card 5 -->
+            <section class="lg:col-start-1 lg:row-start-1 hidden lg:block px-6 mb-8">
+                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <!-- Header -->
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="./images/marilyn-img-1.png" alt="Marilyn Siphron"
+                            class="w-12 h-12 rounded-full object-cover" />
+                        <div>
+                            <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[16px] font-light">
+                                Marilyn Siphron</p>
+                            <p
+                                class="[font-family:var(--font-title)] [color:var(--brand-color)] text-[14px] font-light">
+                                Remix and React Training</p>
+                        </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p
+                        class="[font-family:var(--font-title)] [color:var(--text-color)] text-[14px] leading-relaxed font-light">
+                        Tellus mauris adipiscing dignissim sodales. Id dui venenatis mollis faucibus.
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- Testimonial card 6 -->
+            <section class="lg:col-start-1 lg:row-start-2 hidden lg:block px-6 mb-8">
+                <div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <!-- Header -->
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="./images/marilyn-img-2.png" alt="Marilyn Siphron"
+                            class="w-12 h-12 rounded-full object-cover" />
+                        <div>
+                            <p class="[font-family:var(--font-title)] [color:var(--text-color)] text-[16px] font-light">
+                                Marilyn Siphron</p>
+                            <p
+                                class="[font-family:var(--font-title)] [color:var(--brand-color)] text-[14px] font-light">
+                                Remix and React Training</p>
+                        </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p
+                        class="[font-family:var(--font-title)] [color:var(--text-color)] text-[14px] leading-relaxed font-light">
+                        Libero in egestas pellentesque purus, nullam. Consectetur commodo odio interdum neque
+                        ullamcorper sit.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Call to action -->
+        <section class="absolute left-1/2 -translate-x-1/2 px-6 pb-20 z-[101] text-center">
+            <h3 class="text-xl font-medium text-gray-800 mb-6">
+                So, what are you waiting for?
+            </h3>
+
+            <button
+                class="bg-[var(--brand-color)] [font-family:var(--font-title)] text-white text-[14px] leading-relaxed font-light hover:bg-pink-500 px-8 py-3 rounded-full shadow-lg transition">
+                Let’s start
+            </button>
         </section>
 
     </main>
